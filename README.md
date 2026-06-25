@@ -5,6 +5,22 @@ the script uses lightweight python libraries to convert images
 
 this version of the script converts them in black and white dots as well as colored ones.
 
+### Installation
+
+To run this image processing script, install the required dependencies using pip:
+
+```text
+requests>=2.31.0
+Pillow>=10.0.0
+```
+
+after downloading the zip file and extracting it, run this command:
+
+```bash
+pip install -r requirements.txt
+```
+
+
 # Examples ↓
 
 credits to @X__vanny for the miyabi image.
