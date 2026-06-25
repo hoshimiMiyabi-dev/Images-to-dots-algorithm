@@ -48,7 +48,7 @@ def apply_color_bayer(img, contrast=1.5, brightness=0.45, max_ceiling=185):
     return img
 
 def main():
-    print("--- Tactical Image Ditherer ---")
+    print("image processing algorithm by hoshimiMiyabi-dev on GitHub")
     url = input("Image URL: ").strip()
     mode = input("Black and White or Color? (bw/c): ").strip().lower()
     save_name = input("Save as (filename): ").strip()
@@ -66,12 +66,12 @@ def main():
         elif mode == 'c':
             result = apply_color_bayer(original)
         else:
-            print("Invalid mode. Pick 'bw' or 'c'.")
+            print("Invalid mode. Pick 'bw' for black & white or 'c' for color.")
             return
 
         result.save(save_name)
         result.show()
-        print(f"Done! Image saved as: {save_name}")
+        print(f"Done processing! Image saved as: {save_name}")
 
     except Exception as e:
         print(f"Error: {e}")
